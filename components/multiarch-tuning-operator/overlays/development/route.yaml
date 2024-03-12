@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: multiarch-tuning-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: multiarch-tuning-operator
+    app.kubernetes.io/part-of: multiarch-tuning-operator
+  name: multiarch-tuning-operatorxa3m
+spec:
+  port:
+    targetPort: 5001
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: multiarch-tuning-operator
+    weight: 100
+status: {}

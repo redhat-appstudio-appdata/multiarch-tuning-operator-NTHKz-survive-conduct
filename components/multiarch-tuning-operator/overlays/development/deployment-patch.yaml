@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: multiarch-tuning-operator
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/multiarch-tuning-ope-tenant/multiarch-tuning-operator/multiarch-tuning-operator@sha256:f82c72420f17fc8d9eaab58cb07997547400f8ae600ddef328a1fabe3f0a38c4
+        name: container-image
+        resources: {}
+status: {}
