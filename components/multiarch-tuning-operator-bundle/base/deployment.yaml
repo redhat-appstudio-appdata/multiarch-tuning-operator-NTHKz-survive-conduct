@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: multiarch-tuning-operator-bundle
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/multiarch-tuning-ope-tenant/multiarch-tuning-operator/multiarch-tuning-operator-bundle@sha256:c0b0c313f27c59cd46de10ad0df5049742234c4e585d67133743b616f01169ee
+      - image: quay.io/redhat-user-workloads/multiarch-tuning-ope-tenant/multiarch-tuning-operator/multiarch-tuning-operator-bundle@sha256:e4d04915efcaff649a4492822f4dc13a5c8883bdaa4cffac2705142257993b7e
         imagePullPolicy: Always
         name: container-image
         ports:
